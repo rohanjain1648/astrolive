@@ -15,6 +15,7 @@ import {
   Gem
 } from 'lucide-react';
 import { ZODIAC_SYMBOLS } from '../utils/astroEngine';
+import { getAIChartResponse } from '../utils/aiAstrologer';
 
 export const DashboardPage: React.FC = () => {
   const { profile, openLiveModal } = useAstro();
@@ -42,22 +43,10 @@ export const DashboardPage: React.FC = () => {
     setIsTyping(true);
 
     setTimeout(() => {
-      let aiResponse = '';
-      const q = query.toLowerCase();
-
-      if (q.includes('career') || q.includes('job') || q.includes('money') || q.includes('wealth')) {
-        aiResponse = `With your ${profile.sunSign} Sun placed in harmony with your ${profile.currentDasha.major} Mahadasha, this period favors bold strategic expansion. Your 10th house indicates an upcoming transit shift over the next 45 days. Focus on high-leverage collaborations.`;
-      } else if (q.includes('love') || q.includes('marriage') || q.includes('relationship') || q.includes('partner')) {
-        aiResponse = `Your ${profile.moonSign} Moon reveals deep emotional empathy. Your 7th house is currently supported by Jupiter's benevolent trine. It's a favorable window for deepening authentic vulnerability with partners.`;
-      } else if (q.includes('remedy') || q.includes('gemstone') || q.includes('dosha')) {
-        aiResponse = `To balance your planetary currents, your chart specifically benefits from ${profile.mangalDosha.remedy}. Chanting the Gayatri Mantra at sunrise strengthens your Lagna Lord vitality.`;
-      } else {
-        aiResponse = `According to your ${profile.risingSign} Ascendant and ${profile.nakshatra.name} Nakshatra, your natural archetype is "${profile.cosmicArchetype}". Aligning your daily routine with your cosmic element (${profile.dominantElement}) will amplify your clarity.`;
-      }
-
+      const aiResponse = getAIChartResponse(query, profile);
       setChatMessages([...newMessages, { sender: 'ai', text: aiResponse }]);
       setIsTyping(false);
-    }, 900);
+    }, 600);
   };
 
   const sampleQuestions = [
