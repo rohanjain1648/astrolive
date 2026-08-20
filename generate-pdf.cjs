@@ -52,21 +52,10 @@ const htmlTemplate = `
       padding: 0;
     }
 
-    /* Print settings */
+    /* Print settings - NO Headers & Footers */
     @page {
       size: A4;
-      margin: 20mm 15mm 20mm 15mm;
-    }
-
-    /* Header & Footer simulation */
-    header {
-      font-size: 8pt;
-      color: var(--text-light);
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 5px;
-      margin-bottom: 20px;
-      display: flex;
-      justify-content: space-between;
+      margin: 15mm 15mm 15mm 15mm;
     }
 
     /* Section Styling */
@@ -183,13 +172,24 @@ const htmlTemplate = `
       color: #1e293b;
     }
 
+    /* Embedded Images */
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 20px auto;
+      border-radius: 8px;
+      border: 1px solid #e2e8f0;
+      page-break-inside: avoid;
+    }
+
     /* Helpers */
     .text-center { text-align: center; }
     .page-break { page-break-before: always; }
     
     /* Cover Page */
     .cover {
-      height: 100vh;
+      height: 90vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -201,33 +201,26 @@ const htmlTemplate = `
 
     .cover-title {
       font-family: 'Cinzel', serif;
-      font-size: 28pt;
+      font-size: 32pt;
       font-weight: 800;
       color: #0f172a;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
       line-height: 1.2;
     }
 
     .cover-subtitle {
       font-family: 'Inter', sans-serif;
-      font-size: 14pt;
+      font-size: 15pt;
       color: var(--text-light);
       margin-bottom: 40px;
       font-weight: 300;
     }
 
     .cover-divider {
-      width: 120px;
+      width: 140px;
       height: 4px;
       background: linear-gradient(90deg, var(--primary), var(--secondary));
       margin-bottom: 40px;
-    }
-
-    .cover-meta {
-      font-size: 10pt;
-      color: var(--text-light);
-      margin-top: 80px;
-      line-height: 1.8;
     }
   </style>
 </head>
@@ -235,30 +228,17 @@ const htmlTemplate = `
 
   <!-- Cover Page -->
   <div class="cover">
-    <div style="font-family: 'Orbitron', sans-serif; font-size: 10pt; color: var(--primary); letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 20px; font-weight: 700;">
+    <div style="font-family: 'Orbitron', sans-serif; font-size: 11pt; color: var(--primary); letter-spacing: 0.25em; text-transform: uppercase; margin-bottom: 25px; font-weight: 700;">
       AstroLive Hackathon Submission
     </div>
     <div class="cover-title">COSMIC DNA</div>
     <div class="cover-subtitle">AI-Powered Astro-Social Growth Engine & Platform Evolution</div>
     <div class="cover-divider"></div>
     
-    <div style="max-width: 500px; margin: 0 auto; font-size: 11pt; color: var(--text); line-height: 1.6;">
+    <div style="max-width: 550px; margin: 0 auto; font-size: 12pt; color: var(--text); line-height: 1.7;">
       A Comprehensive Product Teardown, Strategic Growth Architecture, and Technical Implementation Report on Transforming Transactional Astrology into a Retention-Led Viral Ecosystem.
     </div>
-
-    <div class="cover-meta">
-      <strong>Engineering Track</strong>: Core Product Growth & Monetization<br>
-      <strong>Author</strong>: Senior Product Architect & Full-Stack Engineer<br>
-      <strong>Target Platform</strong>: AstroLive (astrolive.app)<br>
-      <strong>Date</strong>: August 2026
-    </div>
   </div>
-
-  <!-- Document Header for internal pages -->
-  <header>
-    <span>AstroLive Cosmic DNA — Project Report</span>
-    <span>August 2026</span>
-  </header>
 
   <!-- Report Body -->
   <div class="report-body">
@@ -272,13 +252,13 @@ const htmlTemplate = `
 console.log('Writing HTML file...');
 fs.writeFileSync(tempHtmlPath, htmlTemplate, 'utf8');
 
-console.log('Rendering HTML to PDF using Chrome Headless...');
+console.log('Rendering HTML to PDF using Chrome Headless (No Headers / Footers)...');
 const chromePath = '"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"';
-const chromeCmd = `${chromePath} --headless --disable-gpu --run-all-compositor-stages-before-draw --print-to-pdf="${outputPdfPath}" "${tempHtmlPath}"`;
+const chromeCmd = `${chromePath} --headless --disable-gpu --no-pdf-header-footer --run-all-compositor-stages-before-draw --print-to-pdf="${outputPdfPath}" "${tempHtmlPath}"`;
 
 try {
   execSync(chromeCmd);
-  console.log(`Successfully generated PDF at: ${outputPdfPath}`);
+  console.log(`Successfully generated clean PDF at: ${outputPdfPath}`);
   
   // Cleanup temporary HTML file
   fs.unlinkSync(tempHtmlPath);
