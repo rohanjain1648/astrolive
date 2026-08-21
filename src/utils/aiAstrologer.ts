@@ -47,10 +47,10 @@ export function getAIChartResponse(query: string, profile: CosmicProfile): strin
     
     return `Looking at your ${profile.risingSign} Lagna (7th House in ${house7Sign}, ruled by ${house7Lord}):
 
-💍 **Marriage & Union Window**: Your chart indicates high auspiciousness for significant marriage commitments around **${favorableAge}**.
-• **Planetary Trigger**: Jupiter's benevolent transit over your 7th house axis activates strong matrimonial yogas during your current ${profile.currentDasha.major}-${profile.currentDasha.minor} Dasha period.
-• **Spouse Traits**: Your 7th Lord ${house7Lord} indicates a partner who is intellectually driven, emotionally grounded, and likely connected through professional or educational circles.
-• **Remedy for Fast-Tracking**: Offer water to the rising Sun daily and wear light pastel tones on Fridays to harmonize Venusian currents.`;
+💍 Marriage & Union Window: Your chart indicates high auspiciousness for significant marriage commitments around ${favorableAge}.
+• Planetary Trigger: Jupiter's benevolent transit over your 7th house axis activates strong matrimonial yogas during your current ${profile.currentDasha.major}-${profile.currentDasha.minor} Dasha period.
+• Spouse Traits: Your 7th Lord ${house7Lord} indicates a partner who is intellectually driven, emotionally grounded, and likely connected through professional or educational circles.
+• Remedy for Fast-Tracking: Offer water to the rising Sun daily and wear light pastel tones on Fridays to harmonize Venusian currents.`;
   }
 
   // 2. LOVE, DATING, CRUSH, RELATIONSHIP ISSUES
@@ -69,10 +69,10 @@ export function getAIChartResponse(query: string, profile: CosmicProfile): strin
   ) {
     return `Based on your Moon placed in ${profile.moonSign} and your ${profile.dominantElement} element:
 
-💖 **Romantic Synergy & Dynamic**:
-• **Emotional Core**: Your ${profile.moonSign} Moon seeks deep psychic resonance and intellectual safety before opening up completely.
-• **Current Transit**: Venus and Jupiter currently form a supportive 5-9 trine to your 5th house of romance, meaning past karmic confusion will clear within the next 60–90 days.
-• **Advice**: If you are navigating a tricky phase or wondering about an ex, this cycle encourages setting firm energetic boundaries. A new, emotionally mature connection is primed to enter your orbit soon.`;
+💖 Romantic Synergy & Dynamic:
+• Emotional Core: Your ${profile.moonSign} Moon seeks deep psychic resonance and intellectual safety before opening up completely.
+• Current Transit: Venus and Jupiter currently form a supportive 5-9 trine to your 5th house of romance, meaning past karmic confusion will clear within the next 60–90 days.
+• Advice: If you are navigating a tricky phase or wondering about an ex, this cycle encourages setting firm energetic boundaries. A new, emotionally mature connection is primed to enter your orbit soon.`;
   }
 
   // 3. CAREER, JOB, PROMOTION, BUSINESS & INTERVIEW
@@ -94,10 +94,10 @@ export function getAIChartResponse(query: string, profile: CosmicProfile): strin
   ) {
     return `Analyzing your 10th House of Karma and active ${profile.currentDasha.major} Mahadasha:
 
-🚀 **Career Trajectory & Breakthroughs**:
-• **Peak Timing**: The strongest window for job switches, salary hikes, or funding breakthroughs opens in the next **3 to 6 months** as Sun and Mars align favorably with your Lagna Lord.
-• **Ideal Domains**: Your ${profile.cosmicArchetype} archetype thrives in roles demanding strategic leadership, tech-enabled innovation, and high-stakes communication.
-• **Strategic Guidance**: Avoid impulsive resignations during retrograde phases; instead, position yourself for an authority leap during the upcoming transit cycle.`;
+🚀 Career Trajectory & Breakthroughs:
+• Peak Timing: The strongest window for job switches, salary hikes, or funding breakthroughs opens in the next 3 to 6 months as Sun and Mars align favorably with your Lagna Lord.
+• Ideal Domains: Your ${profile.cosmicArchetype} archetype thrives in roles demanding strategic leadership, tech-enabled innovation, and high-stakes communication.
+• Strategic Guidance: Avoid impulsive resignations during retrograde phases; instead, position yourself for an authority leap during the upcoming transit cycle.`;
   }
 
   // 4. WEALTH, MONEY, FINANCIAL GAIN & PROPERTY
@@ -119,11 +119,11 @@ export function getAIChartResponse(query: string, profile: CosmicProfile): strin
   ) {
     return `Examining your 2nd House (Dhana Bhava) and 11th House (Labha Bhava):
 
-💰 **Wealth & Abundance Outlook**:
-• **Financial Yogas**: Your chart exhibits favorable Dhana Yoga currents supported by your ${profile.dominantElement} element mastery. 
-• **Wealth Inflow Cycle**: Inflow accelerates significantly during ${profile.currentDasha.major} Dasha sub-periods, particularly through non-traditional ventures and equity/real-estate investments.
-• **Caution**: Guard against speculative impulsive trading when Rahu transits your 8th or 12th house.
-• **Remedy**: Keep a charged Shree Yantra in the North-East quadrant of your workspace to anchor steady financial growth.`;
+💰 Wealth & Abundance Outlook:
+• Financial Yogas: Your chart exhibits favorable Dhana Yoga currents supported by your ${profile.dominantElement} element mastery. 
+• Wealth Inflow Cycle: Inflow accelerates significantly during ${profile.currentDasha.major} Dasha sub-periods, particularly through non-traditional ventures and equity/real-estate investments.
+• Caution: Guard against speculative impulsive trading when Rahu transits your 8th or 12th house.
+• Remedy: Keep a charged Shree Yantra in the North-East quadrant of your workspace to anchor steady financial growth.`;
   }
 
   // 5. FOREIGN TRAVEL, VISA, STUDY ABROAD, RELOCATION
@@ -142,10 +142,10 @@ export function getAIChartResponse(query: string, profile: CosmicProfile): strin
   ) {
     return `Evaluating your 9th House (Bhagya / Long Travel) and 12th House (Foreign Lands):
 
-✈️ **Foreign Settlement & Visa Prospects**:
-• **International Travel Indications**: Your chart possesses strong 9th–12th house linkages, indicating significant prosperity when traveling across borders or collaborating with international clients.
-• **Auspicious Visa Window**: The upcoming planetary transit over your 9th house creates clear clearance for visa stamps, higher education abroad, and international relocations.
-• **Remedy**: Recite the Rahu Beej Mantra on Wednesday evenings to eliminate unexpected consular or bureaucratic roadblocks.`;
+✈️ Foreign Settlement & Visa Prospects:
+• International Travel Indications: Your chart possesses strong 9th–12th house linkages, indicating significant prosperity when traveling across borders or collaborating with international clients.
+• Auspicious Visa Window: The upcoming planetary transit over your 9th house creates clear clearance for visa stamps, higher education abroad, and international relocations.
+• Remedy: Recite the Rahu Beej Mantra on Wednesday evenings to eliminate unexpected consular or bureaucratic roadblocks.`;
   }
 
   // 6. HEALTH, VITALITY, MENTAL PEACE & STRESS
@@ -166,10 +166,10 @@ export function getAIChartResponse(query: string, profile: CosmicProfile): strin
   ) {
     return `Reviewing your 6th House (Roga Bhava) and Lagna vitality (1st House):
 
-🌿 **Vitality & Health Blueprint**:
-• **Pranic Balance**: Your overall vitality index stands at ${profile.energyScores.health}%. Your ${profile.dominantElement} element suggests paying special attention to nervous system regulation and restorative hydration.
-• **Stress Triggers**: Mental fatigue peaks during intense Moon transits over dusthana houses (6th, 8th, 12th).
-• **Vedic Healing Protocol**: Daily listening to the 432 Hz Solfeggio soundscape (available on your Daily Ritual tab) and drinking water from a copper vessel at sunrise will restore biological equilibrium.`;
+🌿 Vitality & Health Blueprint:
+• Pranic Balance: Your overall vitality index stands at ${profile.energyScores.health}%. Your ${profile.dominantElement} element suggests paying special attention to nervous system regulation and restorative hydration.
+• Stress Triggers: Mental fatigue peaks during intense Moon transits over dusthana houses (6th, 8th, 12th).
+• Vedic Healing Protocol: Daily listening to the 432 Hz Solfeggio soundscape (available on your Daily Ritual tab) and drinking water from a copper vessel at sunrise will restore biological equilibrium.`;
   }
 
   // 7. DASHA, PLANETARY PERIODS & TIMELINES
@@ -187,12 +187,12 @@ export function getAIChartResponse(query: string, profile: CosmicProfile): strin
     q.includes('sun') ||
     q.includes('moon')
   ) {
-    return `Active Dasha Breakdown: **${profile.currentDasha.major} Mahadasha — ${profile.currentDasha.minor} Antardasha** (${profile.currentDasha.startDate} to ${profile.currentDasha.endDate})
+    return `Active Dasha Breakdown: ${profile.currentDasha.major} Mahadasha — ${profile.currentDasha.minor} Antardasha (${profile.currentDasha.startDate} to ${profile.currentDasha.endDate})
 
-🌌 **Karmic Influence**:
-• **Theme**: ${profile.currentDasha.focusArea}.
-• **Manifestation**: The lord of your active period (${profile.currentDasha.major}) is transiting favorable quadrants, demanding that you take sovereign responsibility for your life's vision.
-• **Pro Tip**: Remedies performed during this active sub-period carry 3x amplification due to heightened planetary receptivity.`;
+🌌 Karmic Influence:
+• Theme: ${profile.currentDasha.focusArea}.
+• Manifestation: The lord of your active period (${profile.currentDasha.major}) is transiting favorable quadrants, demanding that you take sovereign responsibility for your life's vision.
+• Pro Tip: Remedies performed during this active sub-period carry 3x amplification due to heightened planetary receptivity.`;
   }
 
   // 8. MANGLIK, SADE SATI, KAALSARP & REMEDIES
@@ -210,21 +210,21 @@ export function getAIChartResponse(query: string, profile: CosmicProfile): strin
   ) {
     return `Astrological Afflictions & Remedial Prescription:
 
-🛡️ **Dosha Status**:
-• **Mangal Dosha**: ${profile.mangalDosha.intensity} intensity (${profile.mangalDosha.description}).
-• **Remedy**: ${profile.mangalDosha.remedy}
-• **Prescribed Gemstone**: Yellow Sapphire / Citrine or Emerald depending on your Lagna Lord strength.
-• **Pooja Recommendation**: Maha Mrityunjaya or Navagraha Shanti pooja to balance malefic degrees. (Available on the Remedies tab).`;
+🛡️ Dosha Status:
+• Mangal Dosha: ${profile.mangalDosha.intensity} intensity (${profile.mangalDosha.description}).
+• Remedy: ${profile.mangalDosha.remedy}
+• Prescribed Gemstone: Yellow Sapphire / Citrine or Emerald depending on your Lagna Lord strength.
+• Pooja Recommendation: Maha Mrityunjaya or Navagraha Shanti pooja to balance malefic degrees. (Available on the Remedies tab).`;
   }
 
   // 9. GENERAL / PERSONALITY / LIFE PURPOSE / ARCHETYPE
   return `Analyzing your complete natal ephemeris (${profile.sunSign} Sun, ${profile.moonSign} Moon, ${profile.risingSign} Lagna, and ${profile.nakshatra.name} Nakshatra):
 
-✨ **Cosmic Archetype**: "${profile.cosmicArchetype}"
-• **Soul Purpose**: "${profile.cosmicTagline}"
-• **Key Superpowers**: ${profile.keyTraits.join(', ')}.
-• **Areas of Growth**: ${profile.growthAreas.join(', ')}.
-• **Life Path Number**: ${profile.lifePathNumber} (Signifies purposeful innovation and transformative leadership).
+✨ Cosmic Archetype: "${profile.cosmicArchetype}"
+• Soul Purpose: "${profile.cosmicTagline}"
+• Key Superpowers: ${profile.keyTraits.join(', ')}.
+• Areas of Growth: ${profile.growthAreas.join(', ')}.
+• Life Path Number: ${profile.lifePathNumber} (Signifies purposeful innovation and transformative leadership).
 
-Feel free to ask specific questions like *"When will I get married?"*, *"What about my career switch?"*, or *"Which gemstone is auspicious for me?"*`;
+Feel free to ask specific questions like "When will I get married?", "What about my career switch?", or "Which gemstone is auspicious for me?"`;
 }
